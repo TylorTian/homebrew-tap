@@ -16,10 +16,10 @@ class Jsonstruct < Formula
 
   def install
     virtualenv_install_with_resources
+    system libexec/"bin/pip", "install", "pyjwt"
   end
 
   test do
     system "#{bin}/jsonstruct", "--help"
   end
 end
-
