@@ -16,10 +16,13 @@ class Jsonstruct < Formula
 
   def install
     virtualenv_install_with_resources
-    system libexec/"bin/pip", "install", "pyjwt"
+    venv = virtualenv_create(libexec, "python3.11")
+    venv.pip_install resources
+    venv.pip_install_and_link buildpath
   end
 
   test do
     system "#{bin}/jsonstruct", "--help"
   end
 end
+
