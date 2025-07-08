@@ -9,6 +9,11 @@ class Jsonstruct < Formula
 
   depends_on "python@3.11"
 
+  resource "pyjwt" do
+    url "https://files.pythonhosted.org/packages/7b/e9/e4734b68a8e7e6b95a9240408a370d238d6d7c2b1d7358e0174d6d1b9d12/PyJWT-2.8.0.tar.gz"
+    sha256 "fe4f087f8ea28928b4c3dba9f74842e416cb33623f0cbb2caaed4000a0df6681"
+  end
+
   def install
     virtualenv_install_with_resources
   end
@@ -17,3 +22,4 @@ class Jsonstruct < Formula
     system "#{bin}/jsonstruct", "--help"
   end
 end
+
