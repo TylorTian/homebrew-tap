@@ -4,7 +4,7 @@ class Jsonstruct < Formula
   desc "CLI tool to pretty-print JSON and decode JWTs"
   homepage "https://github.com/TylorTian/jsonstruct"
   url "https://files.pythonhosted.org/packages/source/j/jsonstruct-cli/jsonstruct_cli-0.1.5.tar.gz"
-  sha256 "9a117f8b4f3c9dba7aa87a5c0113358b8b540c7ddabf2edcbbcccf6c572c7ef4"
+  sha256 "027772756edb2738a86482f818810467151755788facfb6f9fdcbf5d1c559445"
   license "MIT"
 
   depends_on "python@3.11"
